@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -28,81 +28,117 @@
 <body>
 
     <header>
+
         <nav class="navbar navbar-expand-xl navbar-dark bg-dark" aria-label="Sixth navbar example">
+
             <div class="container-fluid">
+
                 <div class="p-1">
-                    <a href="../index.html">
-                        <img src="../img/duck.png" alt="Logo" width="70" height="70"
-                            class="d-inline-block align-text-top">
-                    </a>
+                    <img src="../img/duck.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
                 </div>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false"
-                    aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <div class="collapse navbar-collapse" id="navbarsExample06">
                     <ul class="navbar-nav me-auto mb-2 mb-xl-0 p-1">
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Catalogo libri</a>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Catalogo
+                                libri</a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Anagrafica Utenti</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Storico Prestiti</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
                     </ul>
                 </div>
+
             </div>
+
         </nav>
+
     </header>
 
     <main>
 
         <div class="container my-4">
 
+            <div class="my-4 d-flex justify-content-between">
+                <div>
+                    <h1 class="fw-semibold fs-2">Nuovo libro</h1>
+                </div>
+            </div>
+
             <form class="row g-3">
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <label for="inputName" class="form-label">Nome</label>
+                    <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore"
+                        aria-label="Nome">
                 </div>
+
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                    <label for="inputSurname" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore"
+                        aria-label="Cognome">
                 </div>
+
                 <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <label for="inputTitle" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" placeholder="Inserisci il titolo del libro">
+                    <div class="form-text">Titolo versione italiana</div>
                 </div>
-                <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2"
-                        placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputCity" class="form-label">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
+
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label">State</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                    <label for="inputGenre" class="form-label">Genere</label>
+                    <select class="form-select">
+                        <option selected>Scegli il genere</option>
+                        <option>Narrativa</option>
+                        <option>Gialli e Thriller</option>
+                        <option>Romanzi Rosa</option>
+                        <option>Fantasy</option>
+                        <option>Fantascienza</option>
+                        <option>Horror</option>
+                        <option>Letteratura per Ragazzi</option>
+                        <option>Storia</option>
+                        <option>Biografie</option>
+                        <option>Self-help</option>
                     </select>
                 </div>
-                <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
+
+                <div class="col-md-4">
+                    <label for="inputDate" class="form-label">Anno di pubblicazione</label>
+                    <input type="date" class="form-control">
                 </div>
+
+                <div class="col-md-4">
+                    <label for="inputISBN" class="form-label">ISBN#</label>
+                    <input type="text" class="form-control" placeholder="Inserisci il codice ISBN#"
+                        aria-label="Codice ISBN#">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                    <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" rows="3"></textarea>
+                </div>
+
                 <div class="col-12">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <input class="form-check-input" type="checkbox">
                         <label class="form-check-label" for="gridCheck">
-                            Check me out
+                            Disponibile anche in digitale
                         </label>
                     </div>
                 </div>
+
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <button type="submit" class="btn btn-primary">Aggiungi libro</button>
                 </div>
             </form>
+
         </div>
+
     </main>
+
 </body>
 
 </html>
